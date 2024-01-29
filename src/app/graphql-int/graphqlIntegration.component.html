@@ -1,0 +1,40 @@
+ 
+
+
+  <mat-paginator #paginator
+  class="demo-paginator"
+  (page)="handlePageEvent($event)"
+  [length]="length"
+  [pageSize]="pageSize"
+  [disabled]="disabled"
+  [showFirstLastButtons]="showFirstLastButtons"
+  [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+  [hidePageSize]="hidePageSize"
+  [pageIndex]="pageIndex"
+  aria-label="Select page">
+</mat-paginator>
+
+  <section class="results" *ngIf="clientInformation">
+        
+
+    <ul class="client-list"  >
+      <li *ngFor="let clientObj of clientInformation.searchClientv2.clients" class="client-item">
+        <div  class="client-details">
+          <span class="client-name">{{ clientObj.name }}</span>
+          <span class="client-type">{{ clientObj.type }}</span>
+          <span class="client-description">{{ clientObj.description }}</span>
+          <span class="client-address">{{ clientObj.address }}</span>
+       
+          <span class="client-contact">{{ clientObj.contactPersonName }}</span>
+          <span class="client-email">{{ clientObj.email }}</span>
+        </div>
+        <div class="Action">
+          <button class="action-client" type="button">view</button>
+          <button class="action-client" type="button">raise invoice</button>
+          <button class="action-client" type="button">rate</button>
+        </div>
+      </li>
+    </ul>
+  </section>
+       
+

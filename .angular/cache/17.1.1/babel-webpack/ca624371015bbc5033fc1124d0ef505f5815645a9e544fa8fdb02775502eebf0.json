@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { GraphqlIntegrationComponent } from './graphql-integration/graphql-integration.component';\nconst routeConfig = [{\n  path: '',\n  component: GraphqlIntegrationComponent,\n  title: 'Home page'\n}];\nexport default routeConfig;\nexport class AppRoutingModule {}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

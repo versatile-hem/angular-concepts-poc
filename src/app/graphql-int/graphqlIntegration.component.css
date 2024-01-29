@@ -1,0 +1,80 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Section Styles */
+section {
+  margin: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #4CAF50; /* Green border */
+  border-radius: 5px;
+}
+
+button.primary {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: #ffffff; /* White text color */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Results Styles */
+.results {
+  margin-top: 20px;
+}
+
+/* Client List Styles */
+.client-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.client-item {
+  border: 1px solid #4CAF50; /* Green border */
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Client Details Styles */
+.client-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+.client-type {
+  margin-top: 8px;
+  color: #777; /* Lighter text color */
+}
+
+.client-description,
+.client-address,
+.client-contact,
+.client-email {
+  margin-top: 8px;
+  color: #555; /* Slightly darker text color */
+}
+

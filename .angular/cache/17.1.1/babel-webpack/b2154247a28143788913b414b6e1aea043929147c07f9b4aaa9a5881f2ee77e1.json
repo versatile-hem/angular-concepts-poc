@@ -1,0 +1,1 @@
+{"ast":null,"code":"import * as React from \"react\";\nvar INIT = {};\nexport function useLazyRef(getInitialValue) {\n  var ref = React.useRef(INIT);\n  if (ref.current === INIT) {\n    ref.current = getInitialValue();\n  }\n  return ref;\n}\n//# sourceMappingURL=useLazyRef.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
